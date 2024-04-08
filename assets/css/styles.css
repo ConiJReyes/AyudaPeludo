@@ -1,0 +1,154 @@
+/* Estilos de fondos y letras */
+
+/* Estilos de encabezado */
+.header {
+    font-size: 20px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+}
+
+.header a {
+    color: #ffffff; /* Cambio de color a blanco */
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: #ffffff; /* Cambio de color al hacer hover */
+}
+
+/* Estilos de cuerpo */
+.body {
+    color: #f7f7f7; /* Color de texto más oscuro */
+    background-color: #b48e46c7; /* Fondo gris claro */
+    font-family: Arial, sans-serif; /* Cambio de fuente */
+    text-shadow: 1px 1px 2px #161616;
+    margin-top: 140px; /* Ajuste para evitar que el contenido se superponga con el encabezado fijo */
+}
+
+.body a {
+    background-color: rgb(82, 78, 78);
+    color: #ffffff; /* Cambio de color de enlace */
+    border: none;
+}
+
+.body a:hover {
+    background-color: #b48e46c7;
+    color: #070707; /* Cambio de color al hacer hover */
+}
+
+.body p {
+    font-size: 18px; /* Tamaño de fuente para párrafos */
+}
+
+/* Estilo de menú de navegación */
+.menu {
+    position: fixed;
+    top: 80px; /* Alinea el menú debajo del encabezado fijo */
+    left: 0;
+    width: 200px;
+    height: calc(100% - 80px); /* Toma el 100% de la altura menos la altura del encabezado fijo */
+    background-color: #333; /* Fondo gris oscuro */
+    padding: 15px;
+    overflow-y: auto;
+    z-index: 999; /* Asegura que el menú esté por debajo del encabezado */
+}
+
+.menu a {
+    color: #fff; /* Color de enlace en el menú */
+}
+
+.menu a:hover {
+    color: #4CAF50; /* Cambio de color al hacer hover */
+}
+
+/* Estilos de contenido */
+.content {
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logoPrincipal{
+    width: 5%;
+    position: fixed;
+    top: 12%;
+    left: 1%;
+}
+
+.pataGato{
+    width: 4%;
+    position: fixed;
+    top: 11%;
+    right: 1%;
+}
+
+.pataPerro{
+    width: 4%;
+    position: fixed;
+    top: 11%;
+    right: 1%;
+}
+
+.logoNosotros{
+    width: 15%;
+}
+
+.logoContacto{
+    width: 10%;
+}
+
+.btn-volver {
+    position: absolute;
+    left: 20px;
+}
+
+/* Estilos para pie de página */
+.footer {
+    background-color: #ce9848dc; /* Fondo blanco */
+    border: 1px solid #6d592e; /* Borde alrededor de la caja de información */
+    padding: 20px;
+    margin-top: 70px;
+}
+
+/* Media queries para hacer el sitio responsive */
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .header {
+        font-size: 16px;
+    }
+
+    .menu {
+        width: 100%; /* Ancho completo en dispositivos móviles */
+        height: auto; /* Altura automática en dispositivos móviles */
+        top: 60px; /* Ajusta la posición para evitar la superposición con el encabezado */
+    }
+
+    .body {
+        margin-top: 100px; /* Ajusta el margen superior para evitar la superposición con el encabezado */
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+/* Estilos para tablets y pantallas más grandes */
+@media only screen and (min-width: 769px) {
+    .menu {
+        width: 200px; /* Ancho fijo en tablets y pantallas más grandes */
+    }
+
+    img {
+        max-width: 80%; /* Por ejemplo, reducir el ancho en dispositivos de escritorio */
+    }
+}
